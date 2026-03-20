@@ -1,0 +1,23 @@
+Projeto: CodeNow
+Tutor de código com IA que guia o dev pelo raciocínio em vez de entregar a resposta. Resolve a falta de profundidade que a popularização da IA criou nos devs.
+Repo: https://github.com/sansonpedro/codenow
+Stack: Next.js 15, TypeScript, Tailwind CSS, Claude API, Shadcn/ui (a instalar), Phosphor Icons (a instalar)
+Git Flow:
+
+master — produção
+dev — branch padrão, desenvolvimento
+feat/, fix/, chore/, refactor/ — criadas a partir de dev
+
+O que foi feito:
+
+Projeto criado e rodando
+Layout base: dois painéis lado a lado (2/3 editor, 1/3 chat)
+Componentes separados: components/chat/index.tsx e components/code-editor/index.tsx
+README documentado
+Commits semânticos configurados
+Branches master e dev no GitHub
+
+Próximo passo:
+bashgit checkout -b feat/chat-api
+Conectar a API do Claude e escrever o system prompt do tutor — instrução que faz a IA fazer perguntas em vez de dar respostas diretas.
+Chave de API: criar em https://console.anthropic.com e salvar no .env.local como ANTHROPIC_API_KEY=sua-chave
